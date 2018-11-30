@@ -1,0 +1,264 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Ubuntu');
+/* All colors are #02d277, used color picker on the movieDB logo */
+
+
+*,
+html {
+    /* Standard html properties */
+    margin: 0;
+    padding: 0;
+    background-color: #182330;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Ubuntu', Arial, sans-serif;
+    text-shadow: 2px 2px #666;
+    
+}
+
+
+header {
+
+    padding: 12px;
+    background-color: #182330;
+    justify-content: center;
+    text-shadow: 2px 2px #666;
+
+}
+#back-button{
+     cursor: pointer;
+        height: 40px;
+    width: 40px;
+    padding-right: 20%;
+}
+
+#search-button {
+
+    background-color: #182330;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.iconic-property-stroke,
+.iconic-property-fill {
+    fill: #02d277;
+    stroke: #02d277;
+    border: 1px solid white;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+     cursor: pointer;
+}
+
+#search-input {
+    width: 250px;
+    height: 45px;
+    font-size: 1.4rem;
+    /*Added transition not working on safari? -- Nov 26 */
+    transition: width 1s;
+}
+
+#search-input:hover {
+    box-shadow: 2px 2px #02d277;
+    width: 300px;
+}
+
+#search-input:focus {
+    box-shadow: 2px 2px #02d277;
+    width: 300px;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.page {
+    background-color: #182330;
+    justify-content: center;
+}
+
+
+
+.page #search-button {
+    padding: 0 1rem;
+}
+
+h1 {
+
+    font-size: 6.5rem;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px #888;
+    padding: 5rem 0 5rem 0;
+
+}
+
+#selection {
+    margin-left: 15px;
+    height: 45px;
+}
+
+input {
+    background-color: white;
+    color: black;
+}
+
+.modalButton {
+    margin-left: 50%;
+    color: white;
+    background: #182330;
+     cursor: pointer;
+}
+
+
+
+
+.flex-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movieCard {
+    width: 52rem;
+    height: auto;
+    margin: 1rem auto;
+    background-color: #182330;
+    color: white;
+    border: 1px solid #02d277;
+    box-shadow: 4px 4px #666;
+    position: relative;
+    top: 0;
+    transition: linear 0.8s;
+
+
+}
+
+.movieCard:hover {
+    box-shadow: 10px 10px #02d277;
+    top: -10px;
+    right: 10px;
+}
+
+.imageSection {
+    float: left;
+    width: 12rem;
+    height: 17rem;
+    margin-right: 1rem overflow: hidden;
+}
+
+.imageSection > img {
+    height: 17rem;
+    margin-right: 1rem;
+}
+
+
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: #182330;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    width: 500px;
+    height: 280px;
+    z-index: 200;
+    top: calc((100% - 280px)/2);
+    left: calc((100% - 500px)/2);
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    color: #01d277;
+    background-color: #666;
+}
+
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.off {
+    transform: translateY(-350%);
+}
+
+.on {
+    transform: translateY(0);
+}
+
+.cancelButton,
+.saveButton {
+    width: 120px;
+    position: absolute;
+    border: solid;
+    background-color: #02d277;
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+}
+
+.saveButton {
+    bottom: 1rem;
+    right: 4rem;
+    background-color: #02d277;
+}
+
+.cancelButton {
+    bottom: 1rem;
+    left: 4rem;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #666;
+
+    text-align: center;
+}
+
+.modal-header h2 {
+    color: #01d277;
+    background-color: #182330;
+}
+
+.modal-radio {
+    text-align: center;
+    margin-top: 4rem;
+    background-color: #182330;
+}
+
+.modal label {
+    background-color: #182330;
+}
+
+
+
+
+.attribution {
+   position: relative;
+    margin-top: 10rem;
+    width: 10%;
+    left: calc((100% - 15%)/2);
+    width:15%;
+    
+}
+
